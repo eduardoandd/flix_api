@@ -10,7 +10,8 @@ from genres.serializers import GenreSerializer
 class GenreCreateListView(generics.ListCreateAPIView):
     queryset=Genre.objects.all()
     serializer_class=GenreSerializer
-    
+
+# GET BY ID, PUT, DELETE
 class GenreRetrieveUpdateDestroyView(generics.RetrieveUpdateDestroyAPIView):
     queryset=Genre.objects.all()
     serializer_class= GenreSerializer
