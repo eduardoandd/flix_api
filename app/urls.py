@@ -5,7 +5,6 @@ from genres.views import *
 
 urlpatterns = [
     path('admin/', admin.site.urls),
-    path('genres/', genre_create_list_view,name='genre_create_list'),
-    path('genres/', genre_create_list_view,name='genre_create_list'),
+    path('genres/', GenreCreateListView.as_view(),name='genre_create_list'),
     path('genres/<int:pk>/', genre_detail_view,name='genre_datail_view'),
 ]
