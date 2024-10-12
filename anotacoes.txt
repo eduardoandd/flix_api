@@ -1,3 +1,5 @@
 SERIALIZER: pega objetos e transforma em json (serealiza)
 
 classBasedView
+
+Versionamento de recursos:

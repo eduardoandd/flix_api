@@ -1,5 +1,5 @@
 from django.contrib import admin
-from django.urls import path
+from django.urls import path,include
 from genres.views import *
 from actors.views import *
 from movies.views import *
@@ -8,8 +8,8 @@ from reviews.views import *
 urlpatterns = [
     path('admin/', admin.site.urls),
     
-    path('genre/', GenreCreateListView.as_view(),name='genre_create_list'),
-    path('genre/<int:pk>/', GenreRetrieveUpdateDestroyView.as_view(),name='genre_datail_view'),
+    path('api/v1', include('genres.urls')),
+    
     
     path('actor/', ActorCreateListView.as_view(),name='actor_create_list'),
     path('actor/<int:pk>/', ActorRetrieverUpdateDestroyView.as_view(),name='actor_datail_view'),
