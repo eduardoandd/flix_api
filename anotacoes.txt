@@ -2,6 +2,13 @@ SERIALIZER: Converte conjuntos de dados complexos(objetos) em json (serealiza)
 
     validações com ModelSerializer
 
+AUTENTICAÇÕES: camada de segurança para API não ficar publica
+    JWT(Jason web token) : Autenticação com Token
+    pip install djangorestframework-simplejwt
+    
+
+
+
 
 classBasedView
 
