@@ -12,7 +12,7 @@ class MovieCreateListView(generics.ListCreateAPIView):
     serializer_class= MovieModelSerializer
     
 class MovieRetrieverUpdateDestroyView(generics.RetrieveUpdateDestroyAPIView):
-    permission_classes=(IsAuthenticated)
+    permission_classes=(IsAuthenticated,)
     queryset=Movie.objects.all()
     serializer_class=MovieModelSerializer
     

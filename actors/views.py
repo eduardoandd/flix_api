@@ -6,12 +6,12 @@ from actors.models import Actor
 from actors.serializers import *
 
 class ActorCreateListView(generics.ListCreateAPIView):
-    permission_classes=IsAuthenticated
+    permission_classes=(IsAuthenticated,)
     queryset=Actor.objects.all()
     serializer_class= ActorSerializer
     
 class ActorRetrieverUpdateDestroyView(generics.RetrieveUpdateDestroyAPIView):
-    permission_classes=IsAuthenticated
+    permission_classes=(IsAuthenticated,)
     queryset=Actor.objects.all()
     serializer_class=ActorSerializer
 
