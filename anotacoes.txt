@@ -5,8 +5,6 @@ SERIALIZER: Converte conjuntos de dados complexos(objetos) em json (serealiza)
 AUTENTICAÇÕES: camada de segurança para API não ficar publica
     JWT(Jason web token) : Autenticação com Token
     pip install djangorestframework-simplejwt
-    
-
 
 
 
