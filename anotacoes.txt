@@ -1,4 +1,7 @@
-SERIALIZER: pega objetos e transforma em json (serealiza)
+SERIALIZER: Converte conjuntos de dados complexos(objetos) em json (serealiza)
+
+    validações com ModelSerializer
+
 
 classBasedView
 

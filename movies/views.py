@@ -5,8 +5,10 @@ from movies.serializers import *
 
 class MovieCreateListView(generics.ListCreateAPIView):
     queryset= Movie.objects.all()
-    serializer_class= MovieSerializer
+    serializer_class= MovieModelSerializer
     
 class MovieRetrieverUpdateDestroyView(generics.RetrieveUpdateDestroyAPIView):
     queryset=Movie.objects.all()
-    serializer_class=MovieSerializer
+    serializer_class=MovieModelSerializer
+    
+  
